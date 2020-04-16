@@ -1,0 +1,27 @@
+
+#PBS -N gobrien_test  
+#PBS -l nodes=1:ppn=12 	
+#PBS -q multiple  
+#PBS -l walltime=01:00:00 
+#PBS -j oe 	
+#PBS -r n 
+#PBS -m bea
+#PBS -M gareth.obrien@tullowoil.com 
+#PBS -V
+
+#/apps/mpi/mvapich2-1.7-install/bin/mpiexec /home/gareth.obrien/MPI-TEST/hello_world_mpi
+
+#/apps/mpi/mvapich2-1.7-install/bin/mpiexec -f /etc/mpdhosts -n 4 /home/gareth.obrien/MPI-TEST/hello_world_mpi
+#mpiexec ./hello_world_mpi
+
+echo Running on host `hostname`
+echo Time is `date`
+echo Directory is `pwd`
+echo Working directory is $PBS_O_WORKDIR
+cd $PBS_O_WORKDIR
+
+#/apps/mpi/mvapich2-1.7-install/bin/mpiexec /home/gareth.obrien/MPI-TEST/hello_world_mpi
+/apps/mpi/mvapich2-1.7-install/bin/mpiexec ./hello_world_mpi
+
+
+

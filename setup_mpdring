@@ -1,0 +1,65 @@
+# on dublxmpn00 type
+#mpd &
+#mpdtrace -l
+# output is host and port
+
+#mpdboot -n 24 --file=hosts.txt
+
+ssh dublxmpn01 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn02 "mpd -n -h dublxmpn00 -p 50882 & " 
+ssh dublxmpn03 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn04 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn05 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn06 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn07 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn08 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn09 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn10 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn11 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn12 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn13 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn14 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn15 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn16 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn17 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn18 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn19 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn20 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn21 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn22 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn23 "mpd -n -h dublxmpn00 -p 50882 & "
+ssh dublxmpn24 "mpd -n -h dublxmpn00 -p 50882 & "
+
+#mpiexec -l -n 30 hostname
+#mpiexec -l -machinefile machfile -n 5 hostname
+
+ssh dublxmpn01 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn02 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn03 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn04 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn05 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn06 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn07 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn08 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn09 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn10 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn11 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn12 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn13 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn14 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn15 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn16 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn17 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn18 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn19 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn20 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn21 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn22 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn23"ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+ssh dublxmpn24 "ls /panfs/gpt/MODELLING/MPI-TEST/hello_world_mpi "
+
+
+
+
+
+
